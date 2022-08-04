@@ -26,9 +26,47 @@
     font-weight: 600;
 }
 
+.hero-page__container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.hero-page__img {
+    width: 50%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+    width: 100%;
+}
+
+.hero-page__img img {
+    width: 100%;
+}
+
+.hero-page__btn {
+    width: 100%;
+}
+
+.hero-page__details {
+    width: 100%;
+}
+
+.hero-name {
+    font-weight: bold;
+}
+
 @media(min-width: 768px) {
     .heroes-container > .card {
         width: calc(100% / 2  - 1em);
+    }
+
+    .hero-page__img {
+        width: 40%;
+    }
+    .hero-page__details{ 
+        width: 50%;
     }
 }
 

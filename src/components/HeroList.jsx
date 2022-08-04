@@ -10,7 +10,7 @@ const HeroList = ({ publisher }) => {
             {
                 heroes.map((hero) => {
                     return (
-                        <HeroCard hero={hero} />
+                        <HeroCard hero={hero} key={hero.id}/>
                     )
                 })
             }

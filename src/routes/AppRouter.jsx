@@ -5,6 +5,7 @@ import HomePage from '../pages/HomePage'
 import LoginPage from '../pages/LoginPage'
 import MarvelPage from '../pages/MarvelPage'
 import HeroPage from '../pages/HeroPage'
+import SearchPage from '../pages/SearchPage';
 
 const AppRouter = () => {
     return (
@@ -13,8 +14,8 @@ const AppRouter = () => {
             <Route path="dc" element={<DCPage />} />
             <Route path="marvel" element={<MarvelPage />} />
             <Route path="login" element={<LoginPage />} />
-            <Route path="hero/:id" element={<HeroPage />} />
-
+            <Route path="hero/:heroId" element={<HeroPage />} />
+            <Route path="/search" element={<SearchPage/>} />
             {/* Redirecciona cualquier url que no exista a esta */}
             <Route path="/*" element={<Navigate to='login' />} />
 
